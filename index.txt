@@ -1,0 +1,75 @@
+Git
+fast, scalable,ditributed revision control system with an unusually command
+save the changes made on the code
+tracking the changes of the code 
+
+To introduce yourself to Git
+$ git config --global user.name "Your Name Comes Here"
+$ git config --global user.email you@yourdomain.example.com 
+
+$ git init
+It initialized empty Git Repository in .git/
+
+$ touch file_name
+used to create a new file 
+
+$ git add
+Add files to the staging area(Before a file is available to commit to a Repository,the files needs to be added to the staging area)
+
+$ git add .
+It will add contents of all the files in the Repository
+
+$ git add -A 
+it will compare the working directory and staging area 
+
+$ git commit
+git commit -m"commit message"
+To store the contents of the index permanently in the Repository we use this command
+
+$ git add file1 file2 file3
+To modify the files,then add their updated content using thid command
+
+$ git status
+gives the status of the git
+
+$ git log
+used to view the history
+
+$git branch <new_branch_name>
+used to maintain the stability when isolated changes are made to code
+
+$ git checkout branch_name
+It will check the last commit and match them
+branch will be located to current branch
+
+$ git checkout -f
+It will recover uncountable files if they are missing 
+
+$ git merge
+it merges the one branch into another branch 
+
+$ git restore
+ after changes made on the code, the  add that file to the Repository that time we use this
+
+ $ git log -p -1(how many changes you want to display)
+
+ $ git diff
+
+
+ $ git diff --staged
+ It will compare the staging area with the last commit
+
+ $ git rm 
+ It removes the file from working directory as well as staging area
+
+ $ git rm --cached
+ It removes the file from the staging area
+
+$ touch .gitignore
+It will ignore the unused files which we don't want to show on the working directory that files add into the .gitignore
+
+$ git chekout -b <new_branch_name>
+It will create a new branch and switched to that branch
+
+$ git push origin master
+push the origin to the master branch
