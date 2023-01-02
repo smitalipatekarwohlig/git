@@ -1,5 +1,5 @@
 Git
-fast, scalable,ditributed revision control system with an unusually command
+fast, scalable,distributed revision control system with an unusually command
 save the changes made on the code
 tracking the changes of the code 
 
@@ -27,7 +27,7 @@ git commit -m"commit message"
 To store the contents of the index permanently in the Repository we use this command
 
 $ git add file1 file2 file3
-To modify the files,then add their updated content using thid command
+To modify the files,then add their updated content using this command
 
 $ git status
 gives the status of the git
@@ -49,7 +49,7 @@ $ git merge
 it merges the one branch into another branch 
 
 $ git restore
- after changes made on the code, the  add that file to the Repository that time we use this
+ after changes made on the code, then add that file to the Repository that time we use this
 
  $ git log -p -1(how many changes you want to display)
 
@@ -73,3 +73,21 @@ It will create a new branch and switched to that branch
 
 $ git push origin master
 push the origin to the master branch
+
+$ patch command
+$ git add -A
+$ git add .
+$ git commit -m"Commit message"
+$ ls 
+$ tree 
+$ git format-patch <master_branch_name> -o <name_of_the_file(patch)>
+$ git am patch/(eg. 0001-127.patch)
+changes done in the patch file, To add that file to the master branch we use this command
+
+$ git pull
+Used to fetch and merge the changes from the remote repository to the local repository
+
+$ git cherry-pick
+Choose to commit from one branch and apply it into another branch.
+To create a copy of the commit with the same changes on another branch. If we commit changes to the wrong branch or want to make the same changes to another branch.
+On the branch we want apply the commit then use the command: git cherry-pick <commit-hash(paste the code which we get from the git log)>
